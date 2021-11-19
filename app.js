@@ -19,8 +19,8 @@ const User = require('./models/user');
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
-//'mongodb://localhost:27017/as-phyc'
-const dbUrl=process.env.DB_URL;
+const dbUrl='mongodb://localhost:27017/as-phyc'
+// const dbUrl=process.env.DB_URL;
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
